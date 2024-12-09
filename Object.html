@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Demonstration</title>
+</head>
+<body>
+    <h1>Object Demonstration</h1>
+    <button onclick="objectDemo()">Show Object</button>
+    <div id="result"></div>
+    <script>
+        function objectDemo() {
+            var person = { name: 'John', age: 30 };
+            person.city = 'New York';
+            delete person.age;
+            var result = "Name: " + person.name + ", City: " + person.city;
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>

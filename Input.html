@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Prompt Example</title>
+</head>
+<body>
+    <h1>Input Prompt Example</h1>
+    <button onclick="getUserInput()">Click me to enter a value</button>
+    <div id="display"></div>
+    <script>
+        function getUserInput() {
+            let userInput = prompt('Please enter something:');
+            document.getElementById('display').innerHTML = `You entered: ${userInput}`;
+            console.log(`User entered: ${userInput}`);
+        }
+    </script>
+</body>
+</html>

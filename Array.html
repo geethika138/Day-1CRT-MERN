@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demonstration</title>
+</head>
+<body>
+    <h1>Array Demonstration</h1>
+    <button onclick="arrayDemo()">Show Array</button>
+    <div id="result"></div>
+    <script>
+        function arrayDemo() {
+            var fruits = ['Apple', 'Banana', 'Mango'];
+            fruits.push('Orange');
+            fruits.shift();
+            var result = "Array: " + fruits.join(", ");
+            document.getElementById('result').innerHTML = result;
+        }
+    </script>
+</body>
+</html>
